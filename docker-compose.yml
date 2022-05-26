@@ -88,3 +88,9 @@ services:
       - ms-cursos
       - ms-examenes
       - ms-respuestas
+  frontend:
+    image: frontend:1
+    ports:
+      - 81:80
+    depends_on:
+      - ms-gateway

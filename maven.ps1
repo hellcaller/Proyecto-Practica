@@ -10,3 +10,5 @@ mvn -f ./microservicios-cursos/pom.xml -DskipTests=true clean package -DskipTest
 mvn -f ./microservicios-usuarios/pom.xml -DskipTests=true clean package -DskipTests
 
 mvn -f ./microservicios-gateway/pom.xml -DskipTests=true clean package -DskipTests
+
+npm run --prefix frontEnd build-prod
