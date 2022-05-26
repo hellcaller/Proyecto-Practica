@@ -1,0 +1,70 @@
+version: "3.7"
+services:
+  mysqlDB:
+    container_name: mysqlDB
+    image: mysql:5.7.38
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+  postgresDB:
+    container_name: postgresDB
+    image: postgres:13.2
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  mongoDB:
+    container_name: mongoDB
+    image: mongo:5.0.8-focal
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"
+  ms-eureka:
+    image: microservicios-eureka:1
+    ports:
+      - 8761:8761
+  ms-usuarios:
+    image: microservicios-usuarios:1
+    environment:
+      - PORT=8080
+      - SCHAME=db_microservicios_usuarios
+      - DB_USER=postgres
+      - DB_PASS=postgres
+    ports:
+      - 8081:8080
+  ms-cursos:
+    image: microservicios-cursos:1
+    environment:
+      - PORT=8080
+      - SCHAME=db_microservicios_examenes
+      - DB_USER=root
+      - DB_PASS=root
+    ports:
+      - 8082:8080
+  ms-examenes:
+    image: microservicios-examenes:1
+    environment:
+      - PORT=8080
+      - SCHAME=db_microservicios_examenes
+      - DB_USER=root
+      - DB_PASS=root
+    ports:
+      - 8083:8080
+  ms-respuestas:
+    image: microservicios-respuestas:1
+    environment:
+      - PORT=8080
+      - SCHAME=db_microservicios_respuestas
+      - DB_USER=root
+      - DB_PASS=root
+    ports:
+      - 8084:8080
+  ms-gateway:
+    image: microservicios-gateway:1
+    ports:
+      - 80:8090
