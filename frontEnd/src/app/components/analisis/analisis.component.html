@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Material Estudio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' media='screen' href='analisis.component.css'>
+  <script src='main.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+
+    <section class="textos-header">
+      <h1>bienvenido al curso de analisis</h1>
+      <h2>No Olvides poner la musica </h2>
+
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+
+  </header>
+  <main>
+    <section class="contenedor">
+      <div class="frente">
+        <h2 class="subtitulos">Musica ambiental</h2>
+        <audio controls>
+            <source src="/assets/musica/cancion.mp3" type="audio/mp3">
+          </audio>
+      </div>
+
+
+      <h2 class="titulo">Que es un algoritmo</h2>
+      <div class="contenedor-sobre-nosotros">
+         <img src="/assets/images/entrada.png" alt="imagen-about-us">
+         <div class="contenido-textos">
+           <h3><span>1</span> Entrada</h3>
+           <p>Es la introducción de datos para ser transformados, siendo los datos la minima unidad para que el proceso o el algoritmo pueda transformar los datos</p>
+           <h3><span>2</span> Proceso</h3>
+           <p>Es el conjunto de operaciones a realizar para dar
+            solución al problema.</p>
+           <h3><span>3</span> Salida</h3>
+           <p>Son los resultados obtenidos a través del proceso</p>
+         </div>
+      </div>
+    </section>
+
+    <section>
+      <p>En informática, un algoritmo es una serie de pasos/instrucciones que forman un proceso. Los algoritmos presentan las siguientes características:
+
+       <li>Secuenciales: Los algoritmos operan en secuencia, debe procesarse uno a la vez.
+        Precisos. Los algoritmos han de ser precisos en su abordaje del tema, es decir, no pueden ser ambiguos o subjetivos.</li>
+
+       <li> Ordenados: Los algoritmos se deben establecer en la secuencia precisa y exacta para que su lectura tenga sentido y se resuelva el problema.</li>
+
+      <li>Finitos: El algoritmo debe tener un principio y un fin, no puede ser infinito. </li>
+
+      <li> Concretos: Todo algoritmo debe ofrecer un resultado en base a las funciones que cumple.</li>
+
+        <li>Definidos: Un mismo algoritmo con los mismos elementos de entrada (input) debe dar siempre los mismos resultados.</li></p>
+
+        <h2 class="subtitulos">como graficar un algoritmo</h2>
+
+        <p>
+          La forma de graficar algoritmos se conoce como diagramas de flujo, los cuales son diagramas (esquemas geométricos, similares a los mapas conceptuales, pero en dónde se utilizan figuras geométricas que tienen un significado). Los diagramas describen un proceso, sistemas o algoritmo, y es una excelente forma de comprender como funciona un algoritmo. A continuación te dejo un ejemplo que determina según la calificación del alumno si está aprobado o no:
+        </p>
+        <img src="/assets/images/grafica.jpg" alt="imagen-about-us">
+
+        <h2 class="subtitulos">ejemplo de algoritmo</h2>
+
+
+    </section>
+
+    <section>
+      <h2 class="titulo">Escucha nuestro Podcast</h2>
+      <div>
+        <audio controls class="musica">
+          <source src="/assets/musica/cancion.mp3" type="audio/mp3">
+        </audio>
+        <a href="examen"  href="#" routerLink="/question2" routerLinkActive="active">quiz</a>
+        <br>
+        <a href="examen"  href="#" routerLink="/wiki" routerLinkActive="active"> mas material</a>
+      </div>
+
+    </section>
+  </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Wiki</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='wiki.component.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div class="conta">
+    <h2 class="subtitulos">Musica ambiental</h2>
+    <audio controls>
+        <source src="/assets/musica/cancion.mp3" type="audio/mp3">
+      </audio>
+      <div>
+        <button class="navi" href="examen"  href="#" routerLink="/auditivo" routerLinkActive="active">Modo auditivo</button>
+      </div>
+      <div>
+        <button class="navi" href="examen"  href="#" routerLink="/visual" routerLinkActive="active" >Modo visual</button>
+      </div>
+ </div>
+  <h1>Analisis de algoritmos</h1>
+  <hr>
+  <img src="/assets/images/entradaysalida.png" alt="" width="500" height="500">
+
+<div align="left">
+  <p>El término análisis de algoritmos fue acuñado por Donald Knuth1​
+    y se refiere al proceso de encontrar la complejidad computacional
+     de un algoritmo que resuelva un problema computacional dado, con el
+      objetivo de proveer estimaciones teóricas de los recursos que necesita.
+
+      Usualmente, los recursos a los cuales se hace referencia son el tiempo (complejidad temporal) y el almacenamiento (complejidad espacial). Mientras que la complejidad temporal involucra determinar una función que relaciona la longitud o el tamaño de la entrada del algoritmo con el número de pasos que realiza, la complejidad espacial busca la cantidad de ubicaciones de almacenamiento que utiliza. Distintos algoritmos pueden utilizarse para resolver un mismo problema y a su vez los algoritmos pueden estudiarse de forma independiente del lenguaje de programación a utilizar y de la máquina donde se ejecutará.2​ Esto significa que se necesitan técnicas que permitan comparar la eficiencia de los algoritmos antes de su implementación.</p>
+
+    <h1 id="pene"> diseño</h1>
+
+    <section [id]="secciones[1]">
+      <strong>{{secciones[1]}}</strong>
+    </section>
+    <p>
+      El diagrama de flujo es la representación
+      gráfica de un algoritmo; para ello se utiliza un conjunto
+      de símbolos estándares mundialmente utilizados y
+      desarrollados por organizaciones tales como ANSI (American
+      National Institute) e ISO (International Standard Organization
+      para la elaboración de diagramas de flujo;
+
+      En el diagrama cada símbolo representa una
+      acción en concreto; y cada instrucción del
+      algoritmo se visualiza dentro del símbolo adecuado. Los
+      símbolos se conectan con flechas para indicar el orden en
+      que se ejecutan las instrucciones.
+
+      Por ejemplo, el siguiente diagrama de flujo corresponde
+      al algoritmo para calcular el área del
+      rectángulo
+
+      </p>
+
+
+
+
+
+
+
+
+</div>
+<div class="a">
+  <ul>
+    <li>Contents</li>
+    <li>1. <mark>analisis de complejidad </mark></li>
+    <li>1.1 punto de vista intuitivo</li>
+    <li>1.2 Analisis de vista teorico</li>
+    <li>1.3 punto de vista teorico</li>
+    <!-- Links de las secciones -->
+    <ul>
+      <li><a *ngFor="let seccion of secciones"
+        [routerLink] [fragment]="seccion"
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{exact: true}">
+        {{seccion}}
+        </a>
+      </li>
+    </ul>
+
+  </ul>
+
+</div>
+<div>
+
+
+<h2><a href="/wiki#tuId"></a></h2>
+<section [id]="secciones[0]">
+  <strong>{{secciones[0]}}</strong>
+</section>
+En ciencias de la computación, el diseño de algoritmos es un método específico para poder crear un modelo matemático ajustado a un problema específico para resolverlo. El diseño de algoritmos o algorítmica es un área central de las ciencias de la computación, también muy importante para la investigación de operaciones (también conocida como investigación operativa), en ingeniería del software y en otras disciplinas afines.
+</div>
+
+<p>1. Todo diagrama de flujo debe tener un inicio
+  y un fin.</p>
+
+
+  <p>2. Las líneas de flujo nunca deben
+    cruzarse, para evitarlo deben utilizarse el símbolo
+    conector.</p>
+
+    <p>3. Las líneas de flujo deben terminar
+      siempre en un símbolo.</p>
+
+  <p>
+    . No puede llegar más de una
+línea de flujo a un símbolo.
+  </p>
+  <p>
+    5. Todos los símbolos en un diagrama
+deben estar conectados mediante una línea de flujo;
+todo símbolo debe tener una línea de flujo
+entrando y otra saliendo salvo el símbolo que indica
+inicio o fin del diagrama.
+  </p>
+  <p>
+    Se recomienda mantener uniforme el tamaño de los
+símbolos, por lo que el texto que se escribe dentro no
+debe ser muy extenso, recuérdese que el propio
+símbolo indica la operación a realizar. La forma en
+que se capturan los datos de entrada o se muestran los datos de
+salida se detallarán al codificar el algoritmo en el
+lenguaje de programación. Esto mismo se recomienda para la
+representación del algoritmo en
+pseudocódigo.
+  </p>
+
+  <p>
+    Como ya se dijo los datos a procesar y los datos
+resultantes del proceso se almacenan en la memoria principal de
+la computadora, también conocida como memoria RAM (Random
+Access Memory), y también se destinan localidades de
+memoria cuando se necesita almacenar resultados de
+cálculos intermedios. Para poder localizar los datos en la
+memoria se les asignan nombres; que en el ambiente de la
+programación se conocen como identificadores de datos.
+Nombraremos los datos siguiendo las reglas para definir
+identificadores especificadas en la mayoría de los
+lenguajes de programación:
+
+
+  </p>
+<!-- Secciones -->
+
+
+
+
+</body>
+</html>

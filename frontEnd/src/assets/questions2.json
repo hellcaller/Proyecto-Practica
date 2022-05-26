@@ -1,0 +1,77 @@
+{
+  "questions": [{
+          "questionText": "¿Que es un diagrama de flujo?",
+          "options": [{
+                  "text": "una representación grafica de un algoritmo",
+                  "correct": true
+              },
+              {
+                  "text": "un flujo de ideas"
+              },
+              {
+                  "text": "un tipo de grafica"
+              },
+              {
+                  "text": "una entrada y salida"
+              }
+          ],
+          "explanation": " enum is not used as a type in TypeScript"
+      },
+      {
+          "questionText": "un algoritmo tiene entrada, proceso y salida",
+          "options": [{
+                  "text": "si",
+                  "correct": true
+              },
+              {
+                  "text": "no"
+              },
+              {
+                  "text": "tal ves"
+              },
+              {
+                  "text": "frecuentemente"
+
+              }
+          ],
+          "explanation": "enum is not used as a type in TypeScript"
+      },
+      {
+          "questionText": "Los algoritmos son el fundamento de la programación",
+          "options": [{
+                  "text": "si."
+              },
+              {
+                  "text": "no."
+              },
+              {
+                  "text": "tal ves."
+              },
+              {
+                  "text": "frecuentemente.",
+                  "correct": true
+              }
+          ],
+          "explanation": ""
+      },
+
+      {
+          "questionText": "el diagrama de flujo me ayuda a representar mi pseudocodigo",
+          "options": [{
+                  "text": "si",
+                  "correct": true
+              },
+              {
+                  "text": "no"
+              },
+              {
+                  "text": "tal ves"
+              },
+              {
+                  "text": "frecuentemente"
+              }
+          ],
+          "explanation": "a constructor is used by a class to take in parameters"
+      }
+  ]
+}

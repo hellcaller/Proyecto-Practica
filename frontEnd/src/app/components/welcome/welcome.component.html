@@ -1,0 +1,15 @@
+<div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Bienvenido a Practica V</h1>
+    <p class="col-md-8 fs-4">Este quiz tiene un total de 5 preguntas. Cada pregunta ayuda a determinar una manera de estudiar y explorar.</p>
+    <h4>Reglas:</h4>
+    <ol>
+        <li>El tiempo para responder cada pregunta es de 1 minuto.</li>
+        <li>Si recarga la página el quiz se reseteará.</li>
+    </ol>
+    <h1 style="font-family: cursive;text-align:center">Muchos éxitos!</h1>
+    <div class="name col-md-4 my-3">
+        <label for="">Ingrese su nombre: </label>
+        <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="startQuiz()">Iniciar el quiz</button>
+</div>

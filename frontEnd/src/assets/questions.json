@@ -1,0 +1,93 @@
+{
+    "questions": [{
+            "questionText": "Asocio la música con mis estados de ánimo",
+            "options": [{
+                    "text": "si",
+                    "correct": true
+                },
+                {
+                    "text": "no"
+                },
+                {
+                    "text": "tal ves"
+                },
+                {
+                    "text": "frecuentemente"
+                }
+            ],
+            "explanation": "Puedo sumar o multiplicar mentalmente con mucha rapidez"
+        },
+        {
+            "questionText": "prefiere ver videotutoriales",
+            "options": [{
+                    "text": "si"
+                },
+                {
+                    "text": "no"
+                },
+                {
+                    "text": "tal ves"
+                },
+                {
+                    "text": "frecuentemente",
+                    "correct": true
+                }
+            ],
+            "explanation": "enum is not used as a type in TypeScript"
+        },
+        {
+            "questionText": "Me gusta trabajar con calculadoras y computadores?",
+            "options": [{
+                    "text": "si."
+                },
+                {
+                    "text": "no.",
+                    "correct": true
+                },
+                {
+                    "text": "tal ves."
+                },
+                {
+                    "text": "frecuentemente."
+                }
+            ],
+            "explanation": "Siempre entiendo los gráficos que vienen en las instrucciones de equipos o instrumentos"
+        },
+        {
+            "questionText": "siente atraccion por las matematicas",
+            "options": [{
+                    "text": "si"
+                },
+                {
+                    "text": "no",
+                    "correct": true
+                },
+                {
+                    "text": "tal ves"
+                },
+                {
+                    "text": "frecuentemente"
+                }
+            ],
+            "explanation": "number[] is another way of writing Array<number> in TypeScript"
+        },
+        {
+            "questionText": "Puedo mirar un objeto de una manera y con la misma facilidad verlo.?",
+            "options": [{
+                    "text": "si",
+                    "correct": true
+                },
+                {
+                    "text": "no"
+                },
+                {
+                    "text": "tal ves"
+                },
+                {
+                    "text": "frecuentemente"
+                }
+            ],
+            "explanation": "a constructor is used by a class to take in parameters"
+        }
+    ]
+}
