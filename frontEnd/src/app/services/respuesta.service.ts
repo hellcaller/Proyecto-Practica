@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { Respuesta } from '../models/respuesta';
 import { Observable } from 'rxjs';
-import { BASE_ENDPOINT } from '../config/app';
+
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,7 @@ export class RespuestaService {
 
   private cabeceras: HttpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
 
-  private baseEndpoint = BASE_ENDPOINT + '/respuestas';
+  private baseEndpoint = environment.apiURL + '/respuestas';
 
   constructor(private http: HttpClient) { }
 
