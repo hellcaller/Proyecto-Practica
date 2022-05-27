@@ -81,7 +81,7 @@ services:
   ms-gateway:
     image: hellcaller/practica:microservicios-gateway
     ports:
-      - 80:8090
+      - 8090:8090
     depends_on:
       - ms-eureka
       - ms-usuarios
@@ -91,6 +91,6 @@ services:
   frontend:
     image: hellcaller/practica:frontend
     ports:
-      - 81:80
+      - 80:80
     depends_on:
       - ms-gateway
